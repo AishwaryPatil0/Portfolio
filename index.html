@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--font awesome cdn font icons css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+
+                    <div class="logo-text">welcome!</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="./image.jpeg" alt="portfile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Full Stack Developer</span></h5>
+                    <h1>Aishwarya Patil</h1>
+                    <p align="justify"> Hello, I'm Aishwarya Patil a computer science enthusiast with a passion
+                        towards coding having solid understanding of core computer science concepts. Having a
+                        technical skills which includes programming languages like Java, SQL, Hibernate, J2EE, 
+                        Spring, HTML5, CSS3, and Javascript.
+
+                    </p>
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1ZynOQ5uwEoS1wZFfdsLSTTo-fmsmr88y/view?usp=share_link"
+                            target="_blank" class="btn active">Download Resume</a>
+                        <a herf="#" class="btn active">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href=   "https://www.linkedin.com/in/aishwarya-patil07/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AishwaryPatil0" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- typed js cdn for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide answer**/
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.button("click");
+            nav.classList.button("open");
+        })
+
+        var typed=new Typed(".input", {
+            strings:["Frontend Developer","Backend Developer","Fontend Developer","Web Developer"],
+            typedSpeed: 80,
+            backSpeed: 55,
+            loop: true
+
+        })
+    </script>
+</body>
+
+</html>
